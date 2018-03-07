@@ -3,41 +3,132 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 300;
-}
-
-body {
+  }
+  
+  body {
     background-color: #7f8c8d;
     display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.container {
+  }
+  
+  .container {
+    background: rgba(44, 62, 80, 0.7);
     width: 900px;
     height: 400px;
     font-size: 0;
     position: relative;
-    background-color: red;
-}
-
-#form {
-    width: 400px;
-    height: 500px;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 10px 6px -6px #777;
-    z-index: 999;
-    padding: 20px;
-    top: -50px;
-    left: 50px;
-}
-
-.box {
-    display: inline-block;
+  }
+  
+  .w100 {
+    width: 100%;
+  }
+  
+  .text-center {
+    text-align:center;
+  }
+  
+  .box {
     width: 50%;
     height: 100%;
+    display: inline-block;
     color: white;
     padding: 20px;
     vertical-align: top;
-}
+  }
+  
+  .box h3 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  .box p {
+    line-height:1.8;
+  }
+  
+  #form {
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    box-shadow: 0 10px 6px -6px #777;
+    z-index: 999;
+    padding: 20px;
+  }
+  
+  #form h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  
+  .wrapper {
+    position: relative;
+  }
+  
+  i.fa {
+    position: absolute;
+    top: 32px;
+    left: 10px;
+  }
+  
+  input[type=password], input[type=email] {
+    width:100%;
+    margin: 15px 0;
+    padding: 12px 40px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 18px;
+    background: none;
+  }
+  .btn:focus {
+      outline: none;
+  }
+  
+  .btn-orange {
+    border: 2px solid #e67e22;
+    border-radius: 5px;
+  }
+  .btn-primary {
+    border: 1px solid white;
+    color: white;
+  }
+  .left {
+    position: absolute;
+    top: 300px;
+    left: 100px
+  }
+  .right {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+  }
+  
+  @keyframes moveRight {
+      0% {left: 50px;}
+      100% {left: 450px;}
+  }
+  
+  @keyframes moveLeft {
+      0% {left: 450px;}
+      100% {left: 50px;}
+  }
+  
+  .move-right {
+    animation: moveRight 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation-fill-mode: forwards; 
+  }
+  
+  .move-left {
+    animation: moveLeft 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);;
+    animation-fill-mode: forwards; 
+  }
