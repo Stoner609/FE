@@ -18,13 +18,17 @@ Idontknow：意義不明
 
 Moveball：用滑鼠移動球體
 
-Placeholder：讓舊版IE擁有html5的
+Placeholder：讓舊版IE擁有html5的 Placeholder功能
 
-placeholder功能
+Practive：練習CSS切版
 
 RepeatSelect：select相關的小東西
 
 SelectFruits：select相關的小東西
+
+Two_Way_data_Binding：原生寫出雙向綁定
+
+<hr>
 
 cloneRow.html：用jq的clone複製模板
 
