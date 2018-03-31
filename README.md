@@ -2,15 +2,21 @@
 
 16_canvas：馬力歐類型遊戲範例
 
+bar：純CSS的Bar
+
 BuildTable：模擬前端接後端值，做畫面效果
 
 checkbox_NoRepeat：早期寫的爛東西(紀念用)
+
+CompositionEvents：透過Composition Events 增強非拉丁語系輸入法對輸入框的支援
 
 CreateTree：canvas網路上範例
 
 CreateTree2：canvas網路上範例
 
 DocumentFragments：小東西
+
+getOldNewValue：比對Input舊值與新值
 
 Gulp：Gulp練習 (SCSS編譯)
 
@@ -20,7 +26,7 @@ Moveball：用滑鼠移動球體
 
 Placeholder：讓舊版IE擁有html5的 Placeholder功能
 
-Practive：練習CSS切版
+Practice：練習CSS切版
 
 RepeatSelect：select相關的小東西
 

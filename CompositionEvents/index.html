@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.addEventListener('load', function () {
+            var i = document.querySelector("#input");
+
+            i.addEventListener("compositionstart", function (ev) {
+                console.log("compositionstart");
+                console.log(ev.data);
+            });
+
+            i.addEventListener("compositionend", function (ev) {
+                console.log("compositionend");
+                console.log(ev.data);
+            });
+
+            i.addEventListener("compositionupdate", function (ev) {
+                console.log("compositionupdate");
+                console.log(ev.data);
+            });
+
+            i.addEventListener("input", function () {
+                console.log("input");
+                console.log(this.value);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <a href="https://kuro.tw/posts/2016/10/11/%E7%AD%86%E8%A8%98-%E9%80%8F%E9%81%8E-Composition-Events-%E5%A2%9E%E5%BC%B7%E9%9D%9E%E6%8B%89%E4%B8%81%E8%AA%9E%E7%B3%BB%E8%BC%B8%E5%85%A5%E6%B3%95%E5%B0%8D%E8%BC%B8%E5%85%A5%E6%A1%86%E7%9A%84%E6%94%AF%E6%8F%B4/">原文</a>
+        
+    </div>
+    <input type="text" id="input" value="">
+</body>
+
+</html>
